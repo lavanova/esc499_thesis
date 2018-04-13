@@ -1,0 +1,24 @@
+recursion_level = 5;
+transmitter_location = (0, 0, 0);
+receiver_location = (10, 1, 1);
+radiated_power = 1;
+sweep_param = dist;
+start_frequency = 900;	// Frequency in MHz
+number_of_surfaces = 1;
+
+use_pattern = 0;	// Isotropic receivers
+
+// g_rel_perm = 5;
+// g_conductivity = 0.001;
+
+// tx_fname = D:\\Users\\nsood\\Dropbox\\MATLAB_common_scripts\\RayTracing\\3D\\commonfiles\\tx_pattern.txt;
+// rx_tcut_fname = D:\\Users\\nsood\\Dropbox\\MATLAB_common_scripts\\RayTracing\\3D\\commonfiles\\rx_pattern_tc.txt;
+// rx_pcut_fname = D:\\Users\\nsood\\Dropbox\\MATLAB_common_scripts\\RayTracing\\3D\\commonfiles\\rx_pattern_pc.txt;
+
+// Ground
+surfaceA
+{
+  rel_perm = 5;
+  conductivity = 0.001;	// [S/m]
+  vertices = (0,15,0) (0,-15,0) (100000,-15,0) (100000,15,0);
+}
